@@ -2,27 +2,17 @@
 
 using namespace std;
 
+int Dog::DogsCreated = 20;
 
-
-void Dog::HelloWorld() {
-	cout << "Hello world!" << endl;
-	cout << "My Health is: " + to_string(this->Health) << endl;
-	cout << "My Max Health is: " + to_string(this->MaxHealth) << endl;
-
+void Dog::PrintAndPause(string StuffToPrint) {
+	cout << StuffToPrint << endl;
+	system("pause");
 
 }
 
 
 
-int Dog::GetHealth()
-{
-	return this->Health;
-}
 
-int Dog::GetMaxHealth()
-{
-	return this->Health;
-}
 
 void Dog::SetHealth(int NewHealth, int MaxHealth) 
 {
@@ -33,4 +23,39 @@ void Dog::SetHealth(int NewHealth, int MaxHealth)
 
 	this->Health = NewHealth;
 	this->MaxHealth = MaxHealth;
+}
+
+void Dog::SetName(string NewName)
+{
+	this->Name = NewName;
+}
+
+void Dog::SetAge(int NewAge)
+{
+	this->Age = NewAge;
+}
+void Dog::SetID(int NewID)
+{
+	this->ID = NewID;
+}
+
+int Dog::GetID() {
+	return this->ID;
+}
+
+int Dog::GetAge() {
+	return this->Age;
+}
+string Dog::GetName() {
+	return this->Name;
+}
+
+int Dog::GetHealth()
+{
+	return this->Health;
+}
+
+int Dog::GetMaxHealth()
+{
+	return this->Health;
 }

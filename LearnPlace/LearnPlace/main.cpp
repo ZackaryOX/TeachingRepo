@@ -21,13 +21,13 @@ string Hello = "";
 
 
 //Creating a pointer to a memory address * = &
-Dog *Newman;
+GermanShephard *Newman;
 
 int main() {
 	
 	{
 		//Create the a variable in memory address by using "new" to create(instantiate) an object of the class Dog
-		Newman = new Dog(2, 2);
+		Newman = new GermanShephard();
 
 		//Use delete to forcefully delete the memory of the object (otherwise it will be erased automatically once the scope of main ends.
 		delete Newman;
