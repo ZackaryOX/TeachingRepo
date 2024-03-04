@@ -1,3 +1,4 @@
+//PRE PROCESS DIRECTIVES:
 #include <iostream>
 #include <string>
 
@@ -69,6 +70,8 @@ public:
 		this->PrintAndPause("Printing for derived class default");
 	}
 	GermanShephard(string Name, int Age) : Dog(GermanShephardHealth, DefaultSize) {
+		delete &DefaultAge;
+		delete& DefaultSize;
 		this->PrintAndPause("Printing for derived class override");
 		this->SetName(Name);
 		this->SetAge(Age);

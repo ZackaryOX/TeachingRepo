@@ -8,7 +8,7 @@ bool ShouldPlayLoop = false;
 
 
 //Create an integer used for input later
-int CaseInput = 0;
+int CaseInput;
 
 
 //How many bones 
@@ -32,6 +32,8 @@ int main() {
 		//Use delete to forcefully delete the memory of the object (otherwise it will be erased automatically once the scope of main ends.
 		delete Newman;
 	}
+
+	// cout is just an output stream object, "<<" is the stream insertion operation, "endl" just means end line
 	std::cout << "Should The Loop Run? Enter 0 for no and 1 for yes!" << std::endl;
 	std::cin >> ShouldPlayLoop;
 	
@@ -48,7 +50,7 @@ int main() {
 			//First case "1"
 		case 1:
 
-			//This is a foor loop, a foor loop can be used to run code a certain amount of times(iterations)
+			//This is a for loop, a for loop can be used to run code a certain amount of times(iterations)
 			//The format is for ( VARIABLE ; CONDITION ; ITERATION CHANGE )
 			//Variable being used to calculate the condition
 			//Condition that must be true in order for the for loop to run
@@ -103,4 +105,6 @@ int main() {
 
 	std::cout << "Hello I have " << std::to_string(AmountOfBones) << " Apples!" << std::endl;
 	std::system("pause");
+
+	return 0;
 }
